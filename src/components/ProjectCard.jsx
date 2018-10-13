@@ -29,7 +29,7 @@ const Title = styled.div`
 `;
 
 const Image = styled.img`
-  ${tw('w-16 xl:w-16 h-full mb-4 mr-0 md:mr-3 lg:mb-0')};
+  ${tw('w-16 xl:w-16 h-16 xl:h-16 mb-4 mr-0 md:mr-3 lg:mb-0')};
 `;
 
 const ProjectCard = ({ title, link, children, imageSrc }) => (

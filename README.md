@@ -33,7 +33,7 @@ yarn build
 The `public` folder will contain the compiled code and assets. To deploy, run:
 
 ```
-firebase deploy
+yarn deploy
 ```
 
 This will automatically deploy to the `cadams-io` Firebase project and changes will be reflected at https://cadams.io!

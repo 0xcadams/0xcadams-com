@@ -45,6 +45,7 @@
   "scripts": {
     "start": "gatsby develop -o",
     "build": "gatsby build",
+    "deploy": "npm run build && firebase deploy",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "prestart": "postcss tailwind.css -o tailwind.custom.css",
