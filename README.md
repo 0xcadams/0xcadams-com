@@ -3,7 +3,7 @@
 
 <div align="center">
 
-![Depfu](https://img.shields.io/depfu/chase-adams/cadams-io.svg)
+![David](https://img.shields.io/david/chase-adams/cadams-io.svg)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 </div>
