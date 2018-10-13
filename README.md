@@ -8,9 +8,9 @@
 
 </div>
 
-**cadams-io** is built on Gatsby/React using [Tailwind](https://tailwindcss.com/) and [Emotion](https://emotion.sh/) for styling, [React Spring](https://github.com/drcmda/react-spring) for the Parallax effect,
+**cadams-io** is built on Gatsby/React using [Tailwind](https://tailwindcss.com/) and [Emotion](https://emotion.sh/) for styling, [React Spring](https://github.com/drcmda/react-spring) for the Parallax effect, has offline support, and is extremely cache-friendly. It is heavily based upon the [Gatsby Starter Portfolio: Cara](https://github.com/LeKoArts/gatsby-starter-portfolio-cara).
 
-Heavily based upon the [Gatsby Starter Portfolio: Cara](https://github.com/LeKoArts/gatsby-starter-portfolio-cara). Feel free to use the code as you wish!
+Feel free to use the code as you wish!
 
 ## Usage
 
