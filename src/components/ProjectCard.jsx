@@ -77,7 +77,7 @@ const styles = {
 
 const MediaCard = ({ classes, title, link, children, imageSrc, screenImageSrc }) => (
   <Card className={classes.card}>
-    <CardActionArea target="_blank" href={link}>
+    <CardActionArea target="_blank" href={link} rel="noopener">
       <CardMedia className={classes.media} image={screenImageSrc} title={title} />
       <CardContent>
         <TitleHero>
@@ -91,16 +91,6 @@ const MediaCard = ({ classes, title, link, children, imageSrc, screenImageSrc })
         </Typography>
       </CardContent>
     </CardActionArea>
-    {/* <CardActions className={classes.actions} disableActionSpacing>
-      <IconButton aria-label="Open">
-        <OpenInNewIcon />
-      </IconButton>
-    </CardActions> */}
-    {/* <CardActions>
-      <Button size="small" color="primary">
-        View
-      </Button>
-    </CardActions> */}
   </Card>
 );
 
