@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 script:
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then yarn deploy; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn deploy; fi'
 cache:
   directories:
   - .cache
