@@ -168,7 +168,6 @@ const Index = () => (
           <SVG icon="cloud" width={8} stroke={colors['grey-darker']} left="25%" top="5%" />
           <SVG icon="wifi" width={64} fill={colors.green} left="95%" top="5%" />
           <SVG icon="world" className={hidden} width={64} fill={colors.purple} left="20%" top="95%" />
-
           <SVG icon="code" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
           <SVG icon="code" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
         </Divider>
@@ -285,7 +284,7 @@ const Index = () => (
               <a href="https://github.com/chase-adams">GitHub</a> &{' '}
               <a href="https://www.instagram.com/cadamsio/">Instagram</a>
               <br />
-              We want to build the app you dream of!
+              We will build the app you dream of!
             </ContactText>
           </Inner>
           <Footer>&copy; {new Date().getFullYear() || '2018'} cAdams Consulting, LLC</Footer>
