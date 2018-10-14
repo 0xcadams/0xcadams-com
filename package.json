@@ -5,6 +5,8 @@
   "author": "Chase Adams <c@cadams.io>",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^3.2.0",
+    "@material-ui/icons": "^3.0.1",
     "babel-plugin-tailwind": "^0.1.10",
     "emotion": "^9.2.9",
     "emotion-server": "^9.2.9",

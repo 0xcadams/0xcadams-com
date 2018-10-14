@@ -3,3 +3,7 @@ node_js:
   - "node"
 script:
   - yarn deploy
+cache:
+  directories:
+  - .cache
+  - .firebase
