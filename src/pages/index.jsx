@@ -15,14 +15,14 @@ import SVG from '../components/SVG';
 import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation, GlideIn, GlideInDelayed } from '../styles/animations';
 import { hidden } from '../styles/utils';
-import { colors } from '../../tailwind';
+import { colors, fonts } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import headshot from '../images/headshot.png';
+import headshot from '../images/headshot.jpg';
 
-import hcpLogo from '../images/hcp-logo.png';
-import lieuuLogo from '../images/lieuu-logo.png';
-import hcpScreen from '../images/hcp-screen.png';
-import lieuuScreen from '../images/lieuu-screen.png';
+import hcpLogo from '../images/hcp-logo.jpg';
+import lieuuLogo from '../images/lieuu-logo.jpg';
+import hcpScreen from '../images/hcp-screen.jpg';
+import lieuuScreen from '../images/lieuu-screen.jpg';
 
 import '../styles/global';
 
@@ -138,28 +138,14 @@ const Footer = styled.footer`
 
 const theme = createMuiTheme({
   typography: {
-    // Use the system font instead of the default Roboto font.
-    fontFamily: [
-      '"Work Sans"',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
-      'sans-serif',
-    ].join(','),
+    fontFamily: fonts.sans.join(','),
   },
 });
 
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <FAB />
+    {/* <FAB /> */}
     <MuiThemeProvider theme={theme}>
       <Parallax pages={5}>
         <Divider speed={0.2} offset={0}>
@@ -192,7 +178,10 @@ const Index = () => (
               <BigTitle>cAdams Consulting</BigTitle>
             </GlideIn>
             <GlideInDelayed>
-              <Subtitle>We build your next revolutionary web or mobile application.</Subtitle>
+              <Subtitle>
+                We transform your innovative vision into reality with Design Thinking and modern web/mobile
+                technologies.
+              </Subtitle>
             </GlideInDelayed>
           </Hero>
         </Content>

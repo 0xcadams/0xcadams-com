@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from '@material-ui/icons/EmailOutlined';
+
+import ContactDialog from './ContactDialog';
 
 const styles = theme => ({
   button: {
@@ -17,15 +19,40 @@ const styles = theme => ({
   },
 });
 
-const FAB = props => {
-  const { classes } = props;
-  return (
-    <Button variant="extendedFab" aria-label="Delete" className={classes.button}>
-      <AddIcon className={classes.extendedIcon} />
-      Extended
-    </Button>
-  );
-};
+class FAB extends React.Component {
+  state = {
+    open: false,
+  };
+
+  handleClickOpen = () => {
+    this.setState({
+      open: true,
+    });
+  };
+
+  handleClose = () => {
+    console.log('closing...', this.state);
+    this.setState({ open: false });
+  };
+
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
+
+  render() {
+    const { classes } = this.props;
+
+    return (
+      <Button onClick={this.handleClickOpen} variant="extendedFab" aria-label="Contact" className={classes.button}>
+        <ContactDialog handleClose={this.handleClose} handleChange={this.handleChange} {...this.state} />
+        <AddIcon className={classes.extendedIcon} />
+        Contact
+      </Button>
+    );
+  }
+}
 
 FAB.propTypes = {
   classes: PropTypes.object.isRequired,

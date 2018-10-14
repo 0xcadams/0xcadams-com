@@ -84,7 +84,7 @@ SVG.propTypes = {
   stroke: PropTypes.string,
   fill: PropTypes.string,
   width: PropTypes.number,
-  icon: PropTypes.oneOf(['cloud', 'fire', 'world', 'wifi', 'code', 'content', 'mac', 'phone']).isRequired,
+  icon: PropTypes.oneOf(['cloud', 'fav', 'world', 'wifi', 'code', 'content', 'mac', 'phone']).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
   className: PropTypes.string,
