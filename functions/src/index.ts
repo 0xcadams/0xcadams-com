@@ -15,23 +15,29 @@ app.use(cors({ origin: true }));
 app.use(bodyParser.json());
 
 app.post("/", (req, res) => {
+  console.log("req", req);
+
   const { body } = req;
 
-  let webAndMobileText;
+  let optionsText: string = "";
 
-  if (body.checkedWebsite && !body.checkedMobileApp) {
-    webAndMobileText = "Website only.";
-  } else if (!body.checkedWebsite && body.checkedMobileApp) {
-    webAndMobileText = "Mobile app only.";
-  } else if (body.checkedWebsite && body.checkedMobileApp) {
-    webAndMobileText = "Both website and mobile app.";
-  } else {
-    webAndMobileText = "No options selected.";
+  if (body.checkedWebsite) {
+    optionsText += "Web. ";
+  }
+  if (body.checkedMobileApp) {
+    optionsText += "Mobile. ";
+  }
+  if (body.checkedBackend) {
+    optionsText += "Backend. ";
+  }
+
+  if (!optionsText) {
+    optionsText = "No options selected.";
   }
 
   const message = `${body.firstName} ${body.lastName}: ${body.email}\n${
     body.description
-  }\n${webAndMobileText}`;
+  }\n${optionsText.trim()}`;
 
   console.log("sending message", message);
 
