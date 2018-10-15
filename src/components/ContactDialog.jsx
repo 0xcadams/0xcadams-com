@@ -1,3 +1,4 @@
+/* global tw */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -13,6 +14,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import withMobileDialog from '@material-ui/core/withMobileDialog';
+import styled from 'react-emotion';
 
 const styles = theme => ({
   formGroup: {
@@ -21,16 +23,26 @@ const styles = theme => ({
   formControl: {
     marginTop: theme.spacing.unit,
   },
+  firstNameField: {
+    marginRight: theme.spacing.unit,
+  },
 });
+
+const NameHero = styled.div`
+  ${tw('flex flex-col lg:flex-row')};
+`;
 
 const SimpleDialog = props => {
   const {
     open,
     handleClose,
+    handleOnSubmit,
     fullScreen,
     handleChange,
     email = '',
-    name = '',
+    firstName = '',
+    lastName = '',
+    description = '',
     checkedWebsite = false,
     checkedMobileApp = false,
     classes,
@@ -44,53 +56,81 @@ const SimpleDialog = props => {
           In order for us to provide you with the best possible service, please provide the following information and we
           will respond to you promptly!
         </DialogContentText>
-        <TextField
-          autoFocus
-          margin="dense"
-          id="outlined-name-input"
-          label="Name"
-          value={name}
-          type="name"
-          name="name"
-          fullWidth
-          onChange={handleChange('name')}
-        />
-        <TextField
-          margin="dense"
-          id="outlined-email-input"
-          label="Email"
-          value={email}
-          type="email"
-          name="email"
-          autoComplete="email"
-          fullWidth
-          onChange={handleChange('email')}
-        />
-        <FormGroup row className={classes.formGroup}>
-          <FormLabel component="legend">Components needed</FormLabel>
-          <FormControlLabel
-            className={classes.formControl}
-            control={
-              <Checkbox checked={checkedWebsite} onChange={handleChange('checkedWebsite')} value="checkedWebsite" />
-            }
-            label="Website"
+        <form noValidate onSubmit={e => e.preventDefault()}>
+          <NameHero>
+            <TextField
+              autoFocus
+              margin="normal"
+              id="outlined-first-name-input"
+              label="First name"
+              value={firstName}
+              name="firstName"
+              fullWidth
+              onChange={handleChange('firstName')}
+              variant="outlined"
+              className={classes.firstNameField}
+            />
+            <TextField
+              margin="normal"
+              id="outlined-last-name-input"
+              label="Last name"
+              value={lastName}
+              name="lastName"
+              fullWidth
+              onChange={handleChange('lastName')}
+              variant="outlined"
+              className={classes.lastNameField}
+            />
+          </NameHero>
+          <TextField
+            margin="normal"
+            id="outlined-email-input"
+            label="Email"
+            value={email}
+            type="email"
+            name="email"
+            autoComplete="email"
+            fullWidth
+            onChange={handleChange('email')}
+            variant="outlined"
           />
-          <FormControlLabel
-            className={classes.formControl}
-            control={
-              <Checkbox
-                checked={checkedMobileApp}
-                onChange={handleChange('checkedMobileApp')}
-                value="checkedMobileApp"
-              />
-            }
-            label="Mobile App"
+          <TextField
+            margin="normal"
+            id="outlined-description-input"
+            label="Brief description of project"
+            value={description}
+            type="description"
+            name="description"
+            fullWidth
+            onChange={handleChange('description')}
+            variant="outlined"
           />
-        </FormGroup>
+          <FormGroup row={!fullScreen} className={classes.formGroup}>
+            <FormLabel component="legend">Components needed</FormLabel>
+            <FormControlLabel
+              className={classes.formControl}
+              control={
+                <Checkbox checked={checkedWebsite} onChange={handleChange('checkedWebsite')} value="checkedWebsite" />
+              }
+              label="Website"
+            />
+            <FormControlLabel
+              className={classes.formControl}
+              control={
+                <Checkbox
+                  checked={checkedMobileApp}
+                  onChange={handleChange('checkedMobileApp')}
+                  value="checkedMobileApp"
+                />
+              }
+              label="Mobile App"
+            />
+          </FormGroup>
+        </form>
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose}>Cancel</Button>
-        <Button onClick={handleClose} color="primary">
+        <Button onClick={handleOnSubmit} color="primary">
           Submit
         </Button>
       </DialogActions>
@@ -101,11 +141,14 @@ const SimpleDialog = props => {
 SimpleDialog.propTypes = {
   classes: PropTypes.object.isRequired,
   handleClose: PropTypes.func.isRequired,
+  handleOnSubmit: PropTypes.func.isRequired,
   handleChange: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
   fullScreen: PropTypes.bool.isRequired,
   email: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   checkedWebsite: PropTypes.bool.isRequired,
   checkedMobileApp: PropTypes.bool.isRequired,
 };
