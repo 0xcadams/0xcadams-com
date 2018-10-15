@@ -10,7 +10,6 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import FormGroup from '@material-ui/core/FormGroup';
-import FormLabel from '@material-ui/core/FormLabel';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import withMobileDialog from '@material-ui/core/withMobileDialog';
@@ -18,7 +17,7 @@ import styled from 'react-emotion';
 
 const styles = theme => ({
   formGroup: {
-    marginTop: theme.spacing.unit * 2,
+    marginTop: theme.spacing.unit,
   },
   formControl: {
     marginTop: theme.spacing.unit,
@@ -45,6 +44,7 @@ const SimpleDialog = props => {
     description = '',
     checkedWebsite = false,
     checkedMobileApp = false,
+    checkedBackend = false,
     classes,
   } = props;
 
@@ -106,13 +106,12 @@ const SimpleDialog = props => {
             variant="outlined"
           />
           <FormGroup row={!fullScreen} className={classes.formGroup}>
-            <FormLabel component="legend">Components needed</FormLabel>
             <FormControlLabel
               className={classes.formControl}
               control={
                 <Checkbox checked={checkedWebsite} onChange={handleChange('checkedWebsite')} value="checkedWebsite" />
               }
-              label="Website"
+              label="Web App"
             />
             <FormControlLabel
               className={classes.formControl}
@@ -124,6 +123,13 @@ const SimpleDialog = props => {
                 />
               }
               label="Mobile App"
+            />
+            <FormControlLabel
+              className={classes.formControl}
+              control={
+                <Checkbox checked={checkedBackend} onChange={handleChange('checkedBackend')} value="checkedBackend" />
+              }
+              label="Backend/Database"
             />
           </FormGroup>
         </form>
@@ -151,6 +157,7 @@ SimpleDialog.propTypes = {
   description: PropTypes.string.isRequired,
   checkedWebsite: PropTypes.bool.isRequired,
   checkedMobileApp: PropTypes.bool.isRequired,
+  checkedBackend: PropTypes.bool.isRequired,
 };
 
 export default withMobileDialog()(withStyles(styles)(SimpleDialog));
