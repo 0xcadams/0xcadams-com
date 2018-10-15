@@ -64,3 +64,4 @@ tailwind.custom.css
 
 # Firebase
 .firebase
+functions/lib/
