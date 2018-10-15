@@ -145,7 +145,7 @@ const theme = createMuiTheme({
 const Index = () => (
   <React.Fragment>
     <SEO />
-    {/* <FAB /> */}
+    <FAB />
     <MuiThemeProvider theme={theme}>
       <Parallax pages={5}>
         <Divider speed={0.2} offset={0}>
