@@ -17,7 +17,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation, GlideIn, GlideInDelayed } fr
 import { hidden } from '../styles/utils';
 import { colors, fonts } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import headshot from '../images/headshot.jpg';
+import headshot from '../images/headshot.png';
 
 import hcpLogo from '../images/hcp-logo.jpg';
 import lieuuLogo from '../images/lieuu-logo.jpg';
