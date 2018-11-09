@@ -1,12 +1,10 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
+      { "source": "/api/v1/interview/**", "function": "interview" },
+      { "source": "/api/**", "function": "api" },
       {
         "source": "**",
         "destination": "/index.html"

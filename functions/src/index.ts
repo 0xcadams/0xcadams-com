@@ -14,7 +14,7 @@ const twilioClient = twilio(accountSid, authToken);
 app.use(cors({ origin: true }));
 app.use(bodyParser.json());
 
-app.post("/", (req, res) => {
+app.post("/api/v1/signup", (req, res) => {
   console.log("req", req);
 
   const { body } = req;
