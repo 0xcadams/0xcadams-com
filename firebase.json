@@ -1,17 +1,16 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/api/**", "function": "api"
+      },
+      {
+        "source": "!/api/**", "destination": "/index.html"
       }
-    ]
+    ],
+    "trailingSlash": true
   },
   "functions": {
     "predeploy": [

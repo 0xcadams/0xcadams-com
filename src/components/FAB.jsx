@@ -20,7 +20,7 @@ const styles = theme => ({
   },
 });
 
-const apiUrl = 'https://us-central1-cadams-io.cloudfunctions.net/api/';
+const apiUrl = 'https://cadams.io/api/v1/signup';
 
 class FAB extends React.Component {
   state = {
