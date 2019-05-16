@@ -2,7 +2,7 @@ jobs:
   include:
     - stage: test
       language: node_js
-      node_js: 'stable'
+      node_js: '11'
       script:
         - cd functions/ && yarn && cd ..
         - yarn lint
@@ -11,7 +11,7 @@ jobs:
     - stage: release
       if: branch = master
       language: node_js
-      node_js: 'stable'
+      node_js: '11'
       script:
         - cd functions/ && yarn && cd ..
         - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn deploy; fi'
