@@ -1,13 +1,30 @@
-language: node_js
-node_js:
-  - "stable"
-script:
-  - cd functions/ && yarn && cd ..
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn deploy; fi'
+jobs:
+  include:
+    - stage: test
+      language: node_js
+      node_js: 'stable'
+      script:
+        - cd functions/ && yarn && cd ..
+        - yarn lint
+        - yarn build
+
+    - stage: release
+      if: branch = master
+      language: node_js
+      node_js: 'stable'
+      script:
+        - cd functions/ && yarn && cd ..
+        - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn deploy; fi'
+
+stages:
+  - test
+  - release
+
 cache:
   directories:
   - .cache
   - .firebase
+
 branches:
   only:
     - master
