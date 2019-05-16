@@ -24,8 +24,3 @@ cache:
   directories:
   - .cache
   - .firebase
-
-branches:
-  only:
-    - master
-    - /^greenkeeper/.*$/
