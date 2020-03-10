@@ -247,10 +247,10 @@ const Index = () => (
               <AboutDesc>
                 Chase Adams is an Arizona State University graduate who earned bachelor’s degrees in mechanical
                 engineering and computational mathematical sciences. He has previously worked for multiple software
-                companies as a full-stack engineer and co-founded a software startup in the real estate industry. He has
+                companies as a full-stack engineer and founded a software startup in the real estate industry. He has
                 extensive experience in distributed, scalable, and secure software architectures. Presently he is the
                 Assistant Director of Strategic Projects at Arizona State University, leading the software initiatives
-                within the lab. He is the founder of cAdams Consulting, LLC.
+                within the lab. He is the founder of Lieuu LLC and Valure LLC.
               </AboutDesc>
             </AboutHero>
           </Inner>

@@ -18,6 +18,9 @@
     "firebase-functions": "^2.0.3",
     "twilio": "^3.22.0"
   },
+  "engines": {
+    "node": "10"
+  },
   "devDependencies": {
     "tslint": "^5.11.0",
     "typescript": "~2.8.3"
