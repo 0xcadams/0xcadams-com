@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">👨‍💻 cadams-io 👩‍💻</h1>
-<h3 align="center">The Gatsby-driven, modern web application for cAdams Consulting, LLC.</h3>
+<h3 align="center">The Gatsby-driven, modern web application for a Chase Adams personal website.</h3>
 
 <div align="center">
 
