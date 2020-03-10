@@ -3,7 +3,6 @@
 
 <div align="center">
 
-[![Build Status](https://travis-ci.org/chase-adams/cadams-io.svg?branch=master)](https://travis-ci.org/chase-adams/cadams-io)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 </div>
