@@ -10,7 +10,6 @@ import 'typeface-cabin-condensed';
 import 'typeface-cantata-one';
 
 import SEO from '../components/SEO';
-import FAB from '../components/FAB';
 import SVG from '../components/SVG';
 import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation, GlideIn, GlideInDelayed } from '../styles/animations';
@@ -145,7 +144,6 @@ const theme = createMuiTheme({
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <FAB />
     <MuiThemeProvider theme={theme}>
       <Parallax pages={5}>
         <Divider speed={0.2} offset={0}>
@@ -174,13 +172,10 @@ const Index = () => (
         <Content speed={0.4} offset={0}>
           <Hero>
             <GlideIn>
-              <BigTitle>cAdams Consulting</BigTitle>
+              <BigTitle>Chase Adams</BigTitle>
             </GlideIn>
             <GlideInDelayed>
-              <Subtitle>
-                We transform your innovative vision into reality with Design Thinking and modern web/mobile
-                technologies.
-              </Subtitle>
+              <Subtitle>An unusual affinity for code and a passion for learning.</Subtitle>
             </GlideInDelayed>
           </Hero>
         </Content>
@@ -245,7 +240,7 @@ const Index = () => (
         </Divider>
         <Content speed={0.4} offset={3}>
           <Inner>
-            <Title>About Us</Title>
+            <Title>About</Title>
             <AboutHero>
               <Avatar src={headshot} alt="Chase Adams" />
               <AboutSub>Chase Adams</AboutSub>
@@ -281,13 +276,11 @@ const Index = () => (
             <Title>Contact</Title>
             <ContactText>
               <a href="mailto:c@cadams.io">Drop a line</a> or check out:{' '}
-              <a href="https://github.com/chase-adams">GitHub</a> &{' '}
-              <a href="https://www.instagram.com/cadamsio/">Instagram</a>
-              <br />
-              We will build the app you dream of!
+              <a href="https://github.com/chase-adams">GitHub</a> ||{' '}
+              <a href="https://www.instagram.com/cadamsio/">Instagram</a>.
             </ContactText>
           </Inner>
-          <Footer>&copy; {new Date().getFullYear() || '2018'} cAdams Consulting, LLC</Footer>
+          <Footer>&copy; {new Date().getFullYear() || '2018'} Chase Adams</Footer>
         </Content>
         <Divider speed={0.1} offset={4}>
           <UpDown>
