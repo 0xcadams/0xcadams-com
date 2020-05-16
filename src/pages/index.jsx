@@ -18,6 +18,16 @@ import { colors, fonts } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import headshot from '../images/headshot.jpg';
 
+import accelerateLogo from '../images/accelerate-logo.png';
+import impactiLogo from '../images/impacti-logo.png';
+import ppeLogo from '../images/ppe-logo.png';
+import valureLogo from '../images/valure-logo.png';
+
+import accelerateScreen from '../images/accelerate-screen.png';
+import impactiScreen from '../images/impacti-screen.png';
+import ppeScreen from '../images/ppe-screen.png';
+import valureScreen from '../images/valure-screen.png';
+
 import hcpLogo from '../images/hcp-logo.jpg';
 import lieuuLogo from '../images/lieuu-logo.jpg';
 import hcpScreen from '../images/hcp-screen.jpg';
@@ -79,14 +89,21 @@ const Subtitle = styled.p`
 const ProjectsWrapper = styled.div`
   ${tw('flex flex-wrap justify-between mt-8')};
   display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
   @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
     grid-gap: 2rem;
+  }
+  @media (max-width: 1000px) {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 700px) {
+    grid-gap: 1rem;
+  }
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 `;
 
@@ -190,7 +207,16 @@ const Index = () => (
             <Title>Featured Projects</Title>
             <ProjectsWrapper>
               <ProjectCard imageSrc={lieuuLogo} screenImageSrc={lieuuScreen} title="Lieuu" link="https://lieuu.com">
-                Web app to revolutionize the discovery of neighborhoods.
+                Web application to revolutionize the discovery of neighborhoods.
+              </ProjectCard>
+              <ProjectCard
+                imageSrc={ppeLogo}
+                screenImageSrc={ppeScreen}
+                title="PPE Response Network"
+                link="https://pperesponsenetwork.asu.edu"
+              >
+                A unified, community-driven rapid response effort to produce and deliver medical supplies for combating
+                COVID-19.
               </ProjectCard>
               <ProjectCard
                 imageSrc={hcpLogo}
@@ -199,6 +225,25 @@ const Index = () => (
                 link="https://homecareplusllc.com"
               >
                 Static website for an in-home non-medical care service for the elderly.
+              </ProjectCard>
+              <ProjectCard imageSrc={valureLogo} screenImageSrc={valureScreen} title="Valure" link="https://valure.io">
+                Web application for Valure, LLC, a software consulting company.
+              </ProjectCard>
+              <ProjectCard
+                imageSrc={impactiLogo}
+                screenImageSrc={impactiScreen}
+                title="Impacti"
+                link="https://impacti.solutions"
+              >
+                Web application to assist businesses in tracking and improving sustainability outcomes.
+              </ProjectCard>
+              <ProjectCard
+                imageSrc={accelerateLogo}
+                screenImageSrc={accelerateScreen}
+                title="Accelerate Starter"
+                link="https://accelerate-starter.com"
+              >
+                Starter kit for helping the community build web apps quickly and scalably.
               </ProjectCard>
             </ProjectsWrapper>
           </Inner>
@@ -245,12 +290,13 @@ const Index = () => (
               <Avatar src={headshot} alt="Chase Adams" />
               <AboutSub>Chase Adams</AboutSub>
               <AboutDesc>
-                Chase Adams is an Arizona State University graduate who earned bachelor’s degrees in mechanical
-                engineering and computational mathematical sciences. He has previously worked for multiple software
-                companies as a full-stack engineer and founded a software startup in the real estate industry. He has
-                extensive experience in distributed, scalable, and secure software architectures. Presently he is the
-                Assistant Director of Strategic Projects at Arizona State University, leading the software initiatives
-                within the lab. He is the founder of Lieuu LLC and Valure LLC.
+                Chase Adams is an Arizona State University graduate who earned bachelor's degrees in mechanical
+                engineering and computational mathematical sciences. He is currently pursuing a master's degree in
+                engineering management. He has previously worked for multiple software companies as a full-stack
+                engineer and founded a software startup in the real estate industry. He has extensive experience in
+                distributed, scalable, and secure software architectures. Presently he is the Assistant Director of The
+                Luminosity Lab at Arizona State University, leading the software initiatives within the lab. He is the
+                founder of Valure LLC and Lieuu LLC.
               </AboutDesc>
             </AboutHero>
           </Inner>

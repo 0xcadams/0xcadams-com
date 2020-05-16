@@ -11,13 +11,11 @@ import Typography from '@material-ui/core/Typography';
 import styled from 'react-emotion';
 
 const TitleHero = styled.div`
-  ${tw('flex flex-row items-center mb-3')};
+  ${tw('flex flex-row items-center mb-4')};
 `;
 
 const styles = {
-  card: {
-    maxWidth: 375,
-  },
+  card: {},
   media: {
     height: 215,
   },
