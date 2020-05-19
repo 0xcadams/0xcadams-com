@@ -134,6 +134,10 @@ const AboutSub = styled.span`
 
 const AboutDesc = styled.p`
   ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans max-w-xl pt-6 text-center')};
+  a {
+    color: #e07628;
+    text-decoration: none;
+  }
 `;
 
 const ContactText = styled.p`
@@ -291,12 +295,15 @@ const Index = () => (
               <AboutSub>Chase Adams</AboutSub>
               <AboutDesc>
                 Chase Adams is an Arizona State University graduate who earned bachelor's degrees in mechanical
-                engineering and computational mathematical sciences. He is currently pursuing a master's degree in
-                engineering management. He has previously worked for multiple software companies as a full-stack
-                engineer and founded a software startup in the real estate industry. He has extensive experience in
-                distributed, scalable, and secure software architectures. Presently he is the Assistant Director of The
-                Luminosity Lab at Arizona State University, leading the software initiatives within the lab. He is the
-                founder of Valure LLC and Lieuu LLC.
+                engineering and computational mathematical sciences. He is{' '}
+                <a href="https://www.scrum.org/user/512015/">PSMI certified</a> and is currently pursuing a master's
+                degree in engineering management. He has previously worked for multiple software companies as a
+                full-stack engineer and founded a software startup in the real estate industry. He has extensive
+                experience in distributed, scalable, and secure software architectures built with React/NextJS, NodeJS,
+                and MongoDB. Presently he is the Assistant Director of{' '}
+                <a href="https://theluminositylab.com">The Luminosity Lab</a> at Arizona State University, leading all
+                software initiatives. He is the founder of <a href="https://valure.io">Valure LLC</a> and{' '}
+                <a href="https://lieuu.com">Lieuu LLC</a>.
               </AboutDesc>
             </AboutHero>
           </Inner>
