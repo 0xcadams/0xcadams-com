@@ -330,7 +330,7 @@ const Index = () => (
             <ContactText>
               <a href="mailto:c@cadams.io">Drop a line</a> or check out:{' '}
               <a href="https://github.com/chase-adams">GitHub</a> ||{' '}
-              <a href="https://www.instagram.com/cadams.io/">Instagram</a>.
+              <a href="https://twitter.com/_chase_adams">Twitter</a>.
             </ContactText>
           </Inner>
           <Footer>&copy; {new Date().getFullYear() || '2018'} Chase Adams</Footer>
