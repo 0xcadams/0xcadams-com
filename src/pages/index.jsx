@@ -294,16 +294,19 @@ const Index = () => (
               <Avatar src={headshot} alt="Chase Adams" />
               <AboutSub>Chase Adams</AboutSub>
               <AboutDesc>
-                Chase Adams is an Arizona State University graduate who earned bachelor's degrees in mechanical
-                engineering and computational mathematical sciences. He is{' '}
-                <a href="https://www.scrum.org/user/512015/">PSMI certified</a> and is currently pursuing a master's
-                degree in engineering management. He has previously worked for multiple software companies as a
-                full-stack engineer and founded a software startup in the real estate industry. He has extensive
-                experience in distributed, scalable, and secure software architectures built with React/NextJS, NodeJS,
-                and MongoDB. Presently he is the Assistant Director of{' '}
-                <a href="https://theluminositylab.com">The Luminosity Lab</a> at Arizona State University, leading all
-                software initiatives. He is the founder of <a href="https://valure.io">Valure LLC</a> and{' '}
-                <a href="https://lieuu.com">Lieuu LLC</a>.
+                I am a Phoenix, Arizona native who loves software - I've earned a master's degree in Engineering Management and
+                bachelor's degrees in Mechanical Engineering and Computational Mathematical Sciences. I'm also {' '}
+                <a href="https://www.scrum.org/user/512015/">PSMI certified</a>.
+                I've worked for multiple software companies as a full-stack engineer and founded a software startup, <a href="https://lieuu.com">Lieuu</a>,
+                in the real estate space. I also lead software teams working on moonshot projects at
+                <a href="https://theluminositylab.com">The Luminosity Lab</a> at Arizona State University.
+                <br />
+                I have extensive experience in distributed, scalable, and secure software architectures, typically built with
+                React/NextJS, NodeJS, Typescript, and MongoDB. I am currently a Software Consultant/Principal at <a href="https://valure.io">Valure</a> and always
+                looking for new and exciting projects to engage on!
+                <br />
+                In my free time, I love to hike, ski, and travel as much as possible! I'm always available to chat -
+                feel free to reach out anytime!
               </AboutDesc>
             </AboutHero>
           </Inner>
