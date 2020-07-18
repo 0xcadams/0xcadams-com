@@ -15,7 +15,6 @@ import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation, GlideIn, GlideInDelayed } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors, fonts } from '../../tailwind';
-import triangle from '../images/triangle.svg';
 import headshot from '../images/headshot.jpg';
 
 import accelerateLogo from '../images/accelerate-logo.png';
@@ -68,17 +67,6 @@ const BigTitle = styled.h1`
 const Title = styled.h1`
   ${tw('text-4xl lg:text-4xl font-sans text-white mb-8 tracking-wide relative inline-block')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  &:before {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url(${triangle});
-    position: absolute;
-    background-size: 40px;
-    animation: ${rotate} 4s ease-in-out infinite;
-    left: -60px;
-    top: 5px;
-  }
 `;
 
 const Subtitle = styled.p`
