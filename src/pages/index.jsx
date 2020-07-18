@@ -288,11 +288,11 @@ const Index = () => (
                 I've worked for multiple software companies as a full-stack engineer and founded a software startup, <a href="https://lieuu.com">Lieuu</a>,
                 in the real estate space. I also lead software teams working on moonshot projects at
                 <a href="https://theluminositylab.com">The Luminosity Lab</a> at Arizona State University.
-                <br />
+                <br /><br />
                 I have extensive experience in distributed, scalable, and secure software architectures, typically built with
                 React/NextJS, NodeJS, Typescript, and MongoDB. I am currently a Software Consultant/Principal at <a href="https://valure.io">Valure</a> and always
                 looking for new and exciting projects to engage on!
-                <br />
+                <br /><br />
                 In my free time, I love to hike, ski, and travel as much as possible! I'm always available to chat -
                 feel free to reach out anytime!
               </AboutDesc>
