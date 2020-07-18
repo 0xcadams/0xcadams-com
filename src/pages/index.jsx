@@ -286,7 +286,7 @@ const Index = () => (
                 bachelor's degrees in Mechanical Engineering and Computational Mathematical Sciences. I'm also {' '}
                 <a href="https://www.scrum.org/user/512015/">PSMI certified</a>.
                 I've worked for multiple software companies as a full-stack engineer and founded a software startup, <a href="https://lieuu.com">Lieuu</a>,
-                in the real estate space. I also lead software teams working on moonshot projects at
+                in the real estate space. I also lead software teams working on moonshot projects at {' '}
                 <a href="https://theluminositylab.com">The Luminosity Lab</a> at Arizona State University.
                 <br /><br />
                 I have extensive experience in distributed, scalable, and secure software architectures, typically built with
