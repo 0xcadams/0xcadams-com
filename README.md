@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">👨‍💻 cadams-io 👩‍💻</h1>
-<h3 align="center">The Gatsby-driven, modern web application for a Chase Adams personal website.</h3>
+<h3 align="center">The React-driven web application for a Chase Adams personal website.</h3>
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 
 </div>
 
-**cadams-io** is built on Gatsby/React using [Tailwind](https://tailwindcss.com/) and [Emotion](https://emotion.sh/) for styling, [React Spring](https://github.com/drcmda/react-spring) for the Parallax effect, has offline support, and is extremely cache-friendly. It is heavily based upon the [Gatsby Starter Portfolio: Cara](https://github.com/LeKoArts/gatsby-starter-portfolio-cara).
+**cadams-io** is built on React. It is heavily based upon [Adam Alston's personal site](https://github.com/adamalston/v2).
 
 Feel free to use the code as you wish!
 
@@ -35,7 +35,7 @@ The `public` folder will contain the compiled code and assets. To deploy, run:
 yarn deploy
 ```
 
-This will automatically deploy to the `cadams-io` Firebase project and changes will be reflected at https://cadams.io!
+This will automatically deploy to IPFS!
 
 ## License
 
