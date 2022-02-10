@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 
 import { AppContext } from './../App/AppContext';
-import { GitHub, LinkedIn, Resume, Email } from './../icons';
+import { GitHub, LinkedIn, Twitter, Email } from './../icons';
 
 const Container = styled.div`
   a,
@@ -78,16 +78,16 @@ export const Buttons = () => {
       label: 'GitHub',
     },
     {
+      href: 'https://twitter.com/_chase_adams',
+      aria: 'Visit my Twitter profile',
+      icon: <Twitter />,
+      label: 'Twitter',
+    },
+    {
       href: 'https://www.linkedin.com/in/cadamsio/',
       aria: 'Visit my LinkedIn profile',
       icon: <LinkedIn />,
       label: 'LinkedIn',
-    },
-    {
-      href: 'https://ipfs.io/ipfs/QmYoEmcoM23LqxUwza2izgopisrwErqWgTSgko34kWF7kA?filename=chase-adams-resume.pdf',
-      aria: 'Visit IPFS to view and download my resume',
-      icon: <Resume />,
-      label: 'Resume',
     },
     {
       href: 'mailto:c@cadams.io',
