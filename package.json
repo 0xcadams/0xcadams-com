@@ -6,7 +6,7 @@
   "author": "Chase Adams <c@cadams.io>",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
