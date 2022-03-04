@@ -84,7 +84,7 @@ export const Buttons = () => {
       label: 'Twitter',
     },
     {
-      href: 'https://www.linkedin.com/in/cadamsio/',
+      href: 'https://www.linkedin.com/in/chaseadams',
       aria: 'Visit my LinkedIn profile',
       icon: <LinkedIn />,
       label: 'LinkedIn',

@@ -39,7 +39,7 @@ export const Content = () => {
   return (
     <div>
       <C.Name theme={theme} data-v2='name' aria-label='My name is Chase Adams'>Chase Adams</C.Name>
-      <C.Title theme={theme} data-v2='title' aria-label='An unusual affinity for code and a passion for learning'>An unusual affinity for code and a passion for learning.</C.Title>
+      <C.Title theme={theme} data-v2='title' aria-label='web3 engineer, optimist, learner'>web3 engineer, optimist, learner</C.Title>
     </div>
   );
 };
