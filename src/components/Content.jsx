@@ -31,6 +31,7 @@ const C = {
     font-size: 2.2rem;
     margin: 1rem 0 6rem;
     font-weight: 300;
+    padding: 0 10px;
     color: ${({ theme }) => theme.secondaryTextColor};
     @media only screen and (max-device-width: 820px) and (-webkit-min-device-pixel-ratio: 2) {
       font-size: 1.5rem;
