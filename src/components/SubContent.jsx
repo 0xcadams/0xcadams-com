@@ -35,6 +35,7 @@ export const SubContent = () => {
   return (
     <div>
       <C.Title theme={theme}>
+        {"& "}
         <C.Link
           theme={theme}
           data-v2="research"
