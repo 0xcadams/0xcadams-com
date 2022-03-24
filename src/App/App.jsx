@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ThemeProvider } from './AppContext';
-import { Toggle, Content, Buttons, Footer, Particles } from './../components';
+import { Toggle, Content, SubContent, Buttons, Footer, Particles } from './../components';
 import './app.scss';
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
         <Toggle />
         <Content />
         <Buttons />
+        <SubContent />
         <Footer />
         <Particles />
       </div>
