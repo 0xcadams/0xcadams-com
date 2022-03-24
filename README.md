@@ -29,14 +29,6 @@ In order to compile the code, run:
 yarn build
 ```
 
-The `public` folder will contain the compiled code and assets. To deploy, run:
-
-```
-yarn deploy
-```
-
-This will automatically deploy to IPFS!
-
 ## License
 
 The 0xcadams code is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
