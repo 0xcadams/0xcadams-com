@@ -13,6 +13,6 @@ describe('application tests', () => {
 
   test('should render name', () => {
     const element = screen.getByTestId('name');
-    expect(element).toHaveTextContent(/Chase Adams/i);
+    expect(element).toHaveTextContent(/0xcadams/i);
   });
 });

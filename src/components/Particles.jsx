@@ -23,7 +23,7 @@ export const Particles = () => {
     background: {
       color: {
         value: theme.background,
-      }
+      },
     },
     fullScreen: {
       zIndex: 1,
@@ -41,16 +41,13 @@ export const Particles = () => {
       },
       modes: {
         bubble: {
-          distance: 250,
+          distance: 100,
           duration: 2,
           opacity: 0,
           size: 0,
         },
-        grab: {
-          distance: 400,
-        },
         repulse: {
-          distance: 400,
+          distance: 150,
         },
       },
     },
@@ -108,11 +105,7 @@ export const Particles = () => {
         },
         value: {
           min: 1,
-          max: 3,
-        },
-        animation: {
-          speed: 4,
-          minimumValue: 0.3,
+          max: 2,
         },
       },
     },

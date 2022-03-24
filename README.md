@@ -1,5 +1,5 @@
-<h1 align="center" style="border-bottom: none;">👨‍💻 cadams-io 👩‍💻</h1>
-<h3 align="center">The React-driven web application for a Chase Adams personal website.</h3>
+<h1 align="center" style="border-bottom: none;">👨‍💻 0xcadams 👩‍💻</h1>
+<h3 align="center">The React web app for 0xcadams.</h3>
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 
 </div>
 
-**cadams-io** is built on React. It is heavily based upon [Adam Alston's personal site](https://github.com/adamalston/v2).
+**0xcadams-com** is built on React. It is heavily based upon [Adam Alston's personal site](https://github.com/adamalston/v2).
 
 Feel free to use the code as you wish!
 
@@ -39,4 +39,4 @@ This will automatically deploy to IPFS!
 
 ## License
 
-The cadams.io code is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The 0xcadams code is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

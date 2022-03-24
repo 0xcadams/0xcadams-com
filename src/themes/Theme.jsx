@@ -3,7 +3,7 @@ export const dark = {
   primaryTextColor: '#FFF',
   secondaryTextColor: '#CCC',
   tertiaryTextColor: '#999',
-  background: '#232741',
+  background: '#0A0F0D',
   shadowColor: 'rgba(0, 0, 0, 0.5)',
 };
 
