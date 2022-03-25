@@ -16,7 +16,7 @@ export const AppContext = createContext({
 
 export const ThemeProvider: React.FC = ({ children }) => {
   const [isDark, setIsDark] = useState(true);
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const theme = isDark ? dark : light;
 
   useEffect(() => {
