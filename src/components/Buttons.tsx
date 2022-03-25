@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
+import React, { useContext } from "react";
+import styled from "styled-components";
 
-import { AppContext } from './../App/AppContext';
-import { GitHub, LinkedIn, Twitter, Email, Medium } from './../icons';
+import { AppContext } from "../App/AppContext";
+import { GitHub, LinkedIn, Twitter, Email, Medium } from "../icons";
 
 const Container = styled.div`
   a,
@@ -72,43 +72,49 @@ export const Buttons = () => {
 
   const DATA = [
     {
-      href: 'https://github.com/0xcadams',
-      aria: 'Visit my GitHub profile',
+      href: "https://github.com/0xcadams",
+      aria: "Visit my GitHub profile",
       icon: <GitHub />,
-      label: 'GitHub',
+      label: "GitHub",
     },
     {
-      href: 'https://twitter.com/0xcadams',
-      aria: 'Visit my Twitter profile',
+      href: "https://twitter.com/0xcadams",
+      aria: "Visit my Twitter profile",
       icon: <Twitter />,
-      label: 'Twitter',
+      label: "Twitter",
     },
     {
-      href: 'https://www.linkedin.com/in/0xcadams',
-      aria: 'Visit my LinkedIn profile',
+      href: "https://www.linkedin.com/in/0xcadams",
+      aria: "Visit my LinkedIn profile",
       icon: <LinkedIn />,
-      label: 'LinkedIn',
+      label: "LinkedIn",
     },
     {
-      href: 'https://0xcadams.medium.com',
-      aria: 'Visit my Medium profile',
+      href: "https://0xcadams.medium.com",
+      aria: "Visit my Medium profile",
       icon: <Medium />,
-      label: 'LinkedIn',
+      label: "LinkedIn",
     },
     {
-      href: 'mailto:me@0xcadams.com',
-      aria: 'Send me an email with this template',
+      href: "mailto:me@0xcadams.com",
+      aria: "Send me an email with this template",
       icon: <Email />,
-      label: 'Email',
+      label: "Email",
     },
   ];
 
   return (
     <Container theme={theme}>
       {DATA.map(({ href, aria, icon, label }, i) => (
-        <span className='button-container' key={i}>
-          <a className='button' href={href} target='_blank' aria-label={aria} rel='noopener noreferrer'>
-            <div className='icon'>{icon}</div>
+        <span className="button-container" key={i}>
+          <a
+            className="button"
+            href={href}
+            target="_blank"
+            aria-label={aria}
+            rel="noopener noreferrer"
+          >
+            <div className="icon">{icon}</div>
           </a>
         </span>
       ))}

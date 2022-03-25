@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
+import React, { useContext } from "react";
+import styled from "styled-components";
 
-import { AppContext } from './../App/AppContext';
+import { AppContext } from "../App/AppContext";
 
 const F = {
   Container: styled.div`
@@ -9,7 +9,7 @@ const F = {
     bottom: 0;
     right: 0;
     font-size: 0.75rem;
-    padding-right: ${({ isMobile }) => (isMobile ? '1.5rem' : '1rem')};
+    padding-right: ${({ isMobile }) => (isMobile ? "1.5rem" : "1rem")};
     z-index: 1;
   `,
   Text: styled.p`
@@ -28,12 +28,21 @@ export const Footer = () => {
 
   return (
     <F.Container isMobile={isMobile}>
-      <F.Text theme={theme} aria-label='Built by 0xcadams'>Built by&nbsp;0xcadams
+      <F.Text theme={theme} aria-label="Built by 0xcadams">
+        Built by&nbsp;0xcadams
         {isMobile ? (
           <></>
         ) : (
           <>
-            &nbsp;|&nbsp;<F.Link theme={theme} data-v2='source' aria-label='Source code' href='https://github.com/0xcadams/0xcadams-com'>Source</F.Link>
+            &nbsp;|&nbsp;
+            <F.Link
+              theme={theme}
+              data-v2="source"
+              aria-label="Source code"
+              href="https://github.com/0xcadams/0xcadams-com"
+            >
+              Source
+            </F.Link>
           </>
         )}
       </F.Text>
