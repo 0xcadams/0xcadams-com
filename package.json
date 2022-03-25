@@ -14,6 +14,7 @@
   "scripts": {
     "start": "next dev",
     "build": "next build",
+    "export": "next export",
     "serve": "next start",
     "lint": "next lint"
   },
