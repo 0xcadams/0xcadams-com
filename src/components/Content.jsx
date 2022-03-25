@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 import Typical from "react-typical";
 
-import { AppContext } from "./../App/AppContext";
+import { AppContext } from "../App/AppContext";
 
 const sharedStyles = css`
   transition: color 0.5s linear;
@@ -11,11 +11,14 @@ const sharedStyles = css`
   z-index: 1;
 `;
 
+// background-color: ${({ theme }) => theme.codeBackground};
+// border-radius: 1.5rem;
+
 const C = {
   Name: styled.a`
     ${sharedStyles};
     font-size: 5rem;
-    margin: 0 0 0 15px;
+    padding: 0 0.2rem 0 1rem;
     font-weight: 600;
     text-decoration: none;
     color: ${({ theme }) => theme.primaryTextColor};
@@ -50,29 +53,31 @@ export const Content = () => {
 
   return (
     <div>
-      <C.Name
-        theme={theme}
-        data-v2="name"
-        aria-label="My nickname is 0xcadams"
-        href="https://github.com/0xcadams"
-        target="_blank"
-      >
-        <C.HexPrefix theme={theme}>0x</C.HexPrefix>
-        <Typical steps={[2000, "cadams"]} loop={1} wrapper="span" />
-      </C.Name>
+      <div>
+        <C.Name
+          theme={theme}
+          data-v2="name"
+          aria-label="My nickname is 0xcadams"
+          href="https://github.com/0xcadams"
+          target="_blank"
+        >
+          <C.HexPrefix theme={theme}>0x</C.HexPrefix>
+          <Typical steps={[1500, "cadams"]} loop={1} wrapper="span" />
+        </C.Name>
+      </div>
       <C.Title
         theme={theme}
         data-v2="title"
-        aria-label="web3 engineer @ proofofresidency, optimist, learner"
+        aria-label="protocol engineer at livepeer, optimist, learner"
       >
-        web3 engineer @{" "}
+        protocol engineer @{" "}
         <C.Link
           theme={theme}
           data-v2="company"
-          href="https://proofofresidency.xyz"
+          href="https://livepeer.org"
           target="_blank"
         >
-          proofofres
+          livepeer
         </C.Link>
         , optimist, learner
       </C.Title>
