@@ -26,8 +26,8 @@ const T = {
   Switch: styled.label`
     cursor: pointer;
     display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     padding: 0.75rem;
     background-color: ${({ theme }) => theme.shadowColor};
     border-radius: 25%;
