@@ -18,16 +18,17 @@ export const ThemeProvider: React.FC = ({ children }) => {
   const [isDark, setIsDark] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const theme = isDark ? dark : light;
+  const windowType = typeof window;
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (windowType !== "undefined") {
       setIsMobile(
         window?.matchMedia(
           "(max-device-width: 820px) and (-webkit-min-device-pixel-ratio: 2)"
         )?.matches ?? false
       );
     }
-  }, []);
+  }, [windowType]);
 
   return (
     <AppContext.Provider value={{ isDark, setIsDark, theme, isMobile }}>
