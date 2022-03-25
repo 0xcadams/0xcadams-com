@@ -23,8 +23,9 @@ const Container = styled.div`
     height: 6rem;
     width: 6rem;
     color: ${({ theme }) => theme.primaryTextColor};
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     position: relative;
@@ -35,7 +36,7 @@ const Container = styled.div`
   .icon {
     height: 4.5rem;
     width: 4.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .button:active {
@@ -43,8 +44,9 @@ const Container = styled.div`
     transform: scale(0.9);
   }
 
-  .button-container:hover .icon {
+  .button-container:hover .button {
     box-shadow: 0 0 0.25rem 0.25rem rgba(128, 128, 128, 0.25);
+    background-color: ${({ theme }) => theme.background};
   }
 
   @media only screen and (max-device-width: 820px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -62,7 +64,7 @@ const Container = styled.div`
     .icon {
       height: 3rem;
       width: 3rem;
-      padding: 0.5rem;
+      padding: 0.25rem;
     }
   }
 `;
