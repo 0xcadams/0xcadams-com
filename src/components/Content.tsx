@@ -68,18 +68,9 @@ export const Content = () => {
       <C.Title
         theme={theme}
         data-v2="title"
-        aria-label="protocol engineer at livepeer, optimist, learner"
+        aria-label="engineer, optimist, learner"
       >
-        protocol engineer @{" "}
-        <C.Link
-          theme={theme}
-          data-v2="company"
-          href="https://livepeer.org"
-          target="_blank"
-        >
-          livepeer
-        </C.Link>
-        , optimist, learner
+        engineer, optimist, learner
       </C.Title>
     </div>
   );
