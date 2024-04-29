@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">0xcadams</h1>
+<h1 align="center" style="border-bottom: none;">0xcadams.com</h1>
 
 <div align="center">
 
@@ -6,7 +6,7 @@
 
 </div>
 
-**0xcadams-com** is built on Jekyll. Feel free to use the code as you want!
+**0xcadams.com** is built on Jekyll. Feel free to use the code as you want!
 
 ## License
 
