@@ -1,7 +1,7 @@
 ---
 title: Ideas and Execution
 ---
-![[593006C7-AB59-41A2-BE27-FB4CC041EABB_1_105_c.jpeg]]
+![Sol LeWitt wall drawing](https://cdn.0xcadams.com/IMG_20190621_115841.jpg)
 
 Almost five years ago, I went to MASS MoCa and saw Sol LeWitt’s installation there. He had created over 100 wall drawings across 27,000 square feet of space, made of three stories of narrow hallways and expansive rooms with drawings on all sides. The work is driven by shapes and lines; there was mathematical rigor to every drawing, inspired by geometry and simple geometric rules. They were accompanied by a short description:
 
