@@ -1,5 +1,4 @@
-<h1 align="center" style="border-bottom: none;">👨‍💻 0xcadams 👩‍💻</h1>
-<h3 align="center">The React web app for 0xcadams.</h3>
+<h1 align="center" style="border-bottom: none;">0xcadams</h1>
 
 <div align="center">
 
@@ -7,28 +6,8 @@
 
 </div>
 
-**0xcadams-com** is built on React. It is heavily based upon [Adam Alston's personal site](https://github.com/adamalston/v2).
-
-Feel free to use the code as you wish!
-
-## Usage
-
-This project uses Yarn for dependency management. To start hacking, run:
-
-```
-yarn start
-```
-
-This will start the server and launch a browser window.
-
-### Building and Deploying
-
-In order to compile the code, run:
-
-```
-yarn build
-```
+**0xcadams-com** is built on Jekyll. Feel free to use the code as you want!
 
 ## License
 
-The 0xcadams code is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This repo is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
