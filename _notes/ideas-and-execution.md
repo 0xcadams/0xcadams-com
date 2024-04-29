@@ -1,5 +1,7 @@
 ---
 title: Ideas and Execution
+description: On the relationship between the ideas that drive creation and the creation itself.
+image: https://cdn.0xcadams.com/IMG_20190621_115841.jpg
 ---
 ![Sol LeWitt wall drawing](https://cdn.0xcadams.com/IMG_20190621_115841.jpg)
 
@@ -37,6 +39,6 @@ There’s a widely known trap in the world for people without experience. They w
 
 The people who have experience will sometimes say the opposite, and they are also wrong. The idea matters. It's not only about execution. The two shouldn't be separated; the idea should evolve over time with the work. The idea drives the early work, and the early work changes the idea, and so on. It is the interchange between the two that makes craft. It's taking feedback from the work and allowing it to change the idea. The vocabulary evolves with the work. If you trivialize the idea, the work will suffer. And vice versa.
 
-Another way people commonly say this is that it’s about the journey, not the destination. This is not entirely true. The destination is the inspiration; it’s why you started in the first place. It’s why you keep going. Your experience along the way will change your expectations, things will happen that are beyond your control, and your destination will change. The destination still matters.
+Another way people commonly say this is that it’s about the journey, not the destination. This is not entirely true. The destination *is* the inspiration; it’s why you started in the first place. It’s why you keep going. Your experience along the way will change your expectations, things will happen that are beyond your control, and your destination will change. The destination still matters.
 
-The hardest part is allowing the idea to change with the work, but making sure the idea keeps its importance.
+The hardest part is allowing the idea to change with the work, while making sure the idea keeps its importance.

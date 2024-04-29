@@ -18,12 +18,25 @@ open_external_links_in_new_tab: true
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
 
+plugins:
+  - jekyll-seo-tag
+
 permalink: pretty
 relative_permalinks: false
 
 sass:
   sass_dir: _sass
   style: :compressed
+
+twitter:
+  username: 0xcadams
+  card: summary
+
+social:
+  name: Chase Adams
+  links:
+    - https://twitter.com/0xcadams
+    - https://github.com/0xcadams
 
 collections:
   notes:
