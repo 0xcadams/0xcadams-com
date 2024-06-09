@@ -6,7 +6,7 @@ permalink: /about
 
 My name is Chase Adams.
 
-I have been a software engineer for over a decade. A non-exhaustive list of organizations I've contributed to:
+I have been a software engineer for over a decade and am currently fascinated by local-first software. A non-exhaustive list of organizations I've contributed to:
 
 - [Transparency](https://filetransparency.com/) (founder)
 - [Livepeer](https://livepeer.org/) (engineer)
