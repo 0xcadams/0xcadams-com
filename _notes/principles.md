@@ -19,7 +19,7 @@ Around my 30th birthday, I started writing down values that I had learned about 
 
 Most importantly, I wanted to form a basis for the next decade of my life; one with intentionality, stability, love, and meaning. My goal was to find the guiding principles that had brought the most happiness to myself, my love ones, and the people around me.
 
-This past week, I completed the first draft. They are, by definition, a snapshot in time. Maybe after another decade, I will re-evaluate them:
+This past week, I completed the first version. They are, by definition, a snapshot in time. Maybe after another decade, I will re-evaluate them:
 
 ## Radical responsibility
 
