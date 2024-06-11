@@ -1,9 +1,9 @@
 ---
 title: Ideas and Execution
 description: On the relationship between the ideas that drive creation and the creation itself.
-image: https://cdn.0xcadams.com/IMG_20190621_115841_resized.jpg
+image: https://cdn.0xcadams.com/IMG_20190621_115841_resized.jpeg
 ---
-![Sol LeWitt wall drawing](https://cdn.0xcadams.com/IMG_20190621_115841_resized.jpg)
+![Sol LeWitt wall drawing](https://cdn.0xcadams.com/IMG_20190621_115841_resized.jpeg)
 
 On the relationship between the ideas that drive creation and the creation itself:
 
