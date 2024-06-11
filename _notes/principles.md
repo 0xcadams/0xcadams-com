@@ -1,9 +1,9 @@
 ---
 title: Principles
 description: My values that I have learned from the last decade.
-image: https://cdn.0xcadams.com/IMG_20190818_195115.jpg
+image: https://cdn.0xcadams.com/IMG_20190818_195115_resized.jpg
 ---
-![Sunset](https://cdn.0xcadams.com/IMG_20190818_195115.jpg)
+![Sunset](https://cdn.0xcadams.com/IMG_20190818_195115_resized.jpg)
 
 I turned thirty this past August.
 

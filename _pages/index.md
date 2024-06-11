@@ -3,10 +3,10 @@ layout: page
 title: Home
 id: home
 permalink: /
-image: https://cdn.0xcadams.com/0xcadams_streaks_of_amber_4d47bcf2-c950-4c67-80ca-06d571f2f8d7.png
+image: https://cdn.0xcadams.com/0xcadams_streaks_of_amber_4d47bcf2-c950-4c67-80ca-06d571f2f8d7_resized.jpg
 ---
 
-<img alt="Streaks of amber above a lake" src="https://cdn.0xcadams.com/0xcadams_streaks_of_amber_4d47bcf2-c950-4c67-80ca-06d571f2f8d7.png" style="width: 100%; border-radius: 6px;" />
+<img alt="Streaks of amber above a lake" src="https://cdn.0xcadams.com/0xcadams_streaks_of_amber_4d47bcf2-c950-4c67-80ca-06d571f2f8d7_resized.jpg" style="width: 100%; border-radius: 6px;" />
 
 # Essays
 
