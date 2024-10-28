@@ -86,6 +86,16 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2"
+          href="https://github.com/0xcadams"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button size="sm" variant="default">
+            Github
+          </Button>
+        </a>
+        <a
+          className="flex items-center gap-2"
           href="https://x.com/0xcadams"
           target="_blank"
           rel="noopener noreferrer"
@@ -102,16 +112,6 @@ export default function Home() {
         >
           <Button size="sm" variant="default">
             LinkedIn
-          </Button>
-        </a>
-        <a
-          className="flex items-center gap-2"
-          href="https://github.com/0xcadams"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button size="sm" variant="default">
-            Github
           </Button>
         </a>
       </footer>
