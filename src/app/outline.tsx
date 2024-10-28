@@ -31,7 +31,6 @@ const outlineVariants = cva(
     },
     defaultVariants: {
       variant: 'default',
-      direction: 'br',
       stops: 'default',
       opacity: 'none',
     },
