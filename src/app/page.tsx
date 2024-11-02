@@ -117,7 +117,7 @@ export default function Home() {
       </footer>
 
       <svg
-        className="absolute right-4 -top-4 overflow-visible blur-lg"
+        className="absolute right-4 -top-4 overflow-visible pointer-events-none -z-10 blur-lg"
         width="762"
         height="192"
         viewBox="0 0 762 192"
