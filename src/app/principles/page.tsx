@@ -17,7 +17,7 @@ export default function Home() {
         <div className="flex flex-col gap-3">
           <span className="font-semibold text-white">Principles</span>
         </div>
-        <div>I have a few guiding principles which I try to live by:</div>
+        <div>I have a few guiding values which I try to live by:</div>
         <ol className="list-inside list-decimal space-y-3 text-sm text-left">
           {principles.map((principle) => (
             <li className="mb-2" key={principle.title}>

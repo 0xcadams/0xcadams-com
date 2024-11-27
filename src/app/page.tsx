@@ -121,7 +121,7 @@ export default function Home() {
         <Link className={linkVariants()} href="/principles">
           a few principles
         </Link>{" "}
-        that I&apos;ve learned about myself and are always evolving.
+        that I&apos;ve learned about myself which are always evolving.
       </div>
     </main>
   );
