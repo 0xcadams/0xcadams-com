@@ -14,19 +14,18 @@ const config: Config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: { height: "0px", opacity: 0 },
+          to: { height: "var(--radix-collapsible-content-height)", opacity: 1 },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          from: { height: "var(--radix-collapsible-content-height)", opacity: 1 },
+          to: { height: "0px", opacity: 0 },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.8s linear",
-        "accordion-up": "accordion-up 0.8s linear",
+        "accordion-down": "accordion-down 0.13s linear",
+        "accordion-up": "accordion-up 0.13s linear",
       },
-
     },
   },
   plugins: [],
