@@ -2,12 +2,10 @@
 
 import * as Collapsible from "@radix-ui/react-collapsible";
 import { ChevronDownIcon } from "lucide-react";
-import { useState } from "react";
-import { cn } from ".";
-import { Button } from "./button";
-import { noiseVariants } from "./noise";
-import { linkVariants } from "./link";
 import Link from "next/link";
+import { useState } from "react";
+import { Button } from "./button";
+import { linkVariants } from "./link";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
