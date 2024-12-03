@@ -1,9 +1,9 @@
 "use client";
 
-import { ArrowLeftIcon } from "lucide-react";
-import { Button } from "../button";
-import Link from "next/link";
 import * as Accordion from "@radix-ui/react-accordion";
+import { ArrowLeftIcon } from "lucide-react";
+import Link from "next/link";
+import { Button } from "../button";
 
 export default function Home() {
   return (
@@ -19,10 +19,10 @@ export default function Home() {
           <span className="font-semibold text-white">Principles</span>
         </div>
         <div>I have a few guiding values which I try to live by:</div>
-        <Accordion.Root type="multiple">
+        <Accordion.Root defaultValue={principles[0].title} type="single">
           <ol className="list-inside list-decimal space-y-3 text-sm text-left w-full">
-            {principles.map((principle, index) => (
-              <Accordion.Item key={principle.title} value={`item-${index}`}>
+            {principles.map((principle) => (
+              <Accordion.Item key={principle.title} value={principle.title}>
                 <Accordion.Trigger
                   asChild
                   className="items-center justify-between w-full mb-2 font-semibold text-white cursor-pointer"
