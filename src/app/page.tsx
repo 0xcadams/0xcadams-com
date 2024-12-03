@@ -4,6 +4,7 @@ import * as Collapsible from "@radix-ui/react-collapsible";
 import { ChevronDownIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { cn } from ".";
 import { Button } from "./button";
 import { linkVariants } from "./link";
 
@@ -11,11 +12,19 @@ export default function Home() {
   const [open, setOpen] = useState(false);
 
   return (
-    <main className="flex flex-col gap-6 row-start-2 items-start transition-all">
+    <main
+      className={cn(
+        "flex flex-col gap-6 row-start-2 items-start transition-all"
+      )}
+    >
       <div className="flex flex-col gap-3">
         <span>
           Chase Adams, founder of{" "}
-          <a className={linkVariants()} target="_blank" href="https://filetransparency.com">
+          <a
+            className={linkVariants()}
+            target="_blank"
+            href="https://filetransparency.com"
+          >
             Transparency
           </a>
           .
@@ -84,7 +93,11 @@ export default function Home() {
           </ol>
 
           <Collapsible.Trigger asChild>
-            <Button className="px-2 py-1.5 mr-2 h-auto" size="sm" variant="default">
+            <Button
+              className="px-2 py-1.5 mr-2 h-auto"
+              size="sm"
+              variant="default"
+            >
               <ChevronDownIcon
                 data-state={open ? "open" : "closed"}
                 className="w-3.5 h-3.5 transition-all duration-500 data-[state=open]:rotate-180"

@@ -3,6 +3,7 @@
 import { ArrowLeftIcon } from "lucide-react";
 import { Button } from "../button";
 import Link from "next/link";
+import * as Accordion from "@radix-ui/react-accordion";
 
 export default function Home() {
   return (
@@ -13,21 +14,30 @@ export default function Home() {
         </Button>
       </Link>
 
-      <main className="flex flex-col gap-6 row-start-2 items-start transition-all">
+      <main className="flex flex-col gap-6 row-start-2 w-full items-start">
         <div className="flex flex-col gap-3">
           <span className="font-semibold text-white">Principles</span>
         </div>
         <div>I have a few guiding values which I try to live by:</div>
-        <ol className="list-inside list-decimal space-y-3 text-sm text-left">
-          {principles.map((principle) => (
-            <li className="mb-2" key={principle.title}>
-              <span className="font-semibold text-white">{principle.title}</span>
-              <div className="flex flex-col gap-1 mt-0.5">
-                <span className="text-sm">{principle.description}</span>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <Accordion.Root type="multiple">
+          <ol className="list-inside list-decimal space-y-3 text-sm text-left w-full">
+            {principles.map((principle, index) => (
+              <Accordion.Item key={principle.title} value={`item-${index}`}>
+                <Accordion.Trigger
+                  asChild
+                  className="items-center justify-between w-full mb-2 font-semibold text-white cursor-pointer"
+                >
+                  <li>{principle.title}</li>
+                </Accordion.Trigger>
+                <Accordion.Content className="pt-2 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                  <div className="flex flex-col gap-1">
+                    <span className="text-sm">{principle.description}</span>
+                  </div>
+                </Accordion.Content>
+              </Accordion.Item>
+            ))}
+          </ol>
+        </Accordion.Root>
       </main>
     </>
   );

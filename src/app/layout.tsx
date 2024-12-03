@@ -40,13 +40,15 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(
+          `${geistSans.variable} ${geistMono.variable} antialiased`,
+          `transition-with-reduce bg-[length:610px] bg-repeat bg-[url("https://cdn.filetransparency.com/images/noise.png")]`
+        )}
       >
         <div
           className={cn(
             "grid grid-rows-[20px_1fr_20px] max-w-2xl mx-auto items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]",
-            "text-white/90",
-            noiseVariants({})
+            "text-white/90"
           )}
         >
           {children}
