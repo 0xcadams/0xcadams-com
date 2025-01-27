@@ -3,7 +3,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
 import { outlineVariants } from "./outline";
-import { cn } from ".";
+import { cn } from "./cn";
 import { useFormStatus } from "react-dom";
 import { useHotkeys } from "./use-hotkeys";
 

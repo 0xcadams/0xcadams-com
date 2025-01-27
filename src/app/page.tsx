@@ -4,7 +4,7 @@ import * as Collapsible from "@radix-ui/react-collapsible";
 import { ChevronDownIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { cn } from ".";
+import { cn } from "./cn";
 import { Button } from "./button";
 import { linkVariants } from "./link";
 
@@ -20,6 +20,14 @@ export default function Home() {
       <div className="flex flex-col gap-3">
         <span>
           Chase Adams, founder of{" "}
+          <a
+            className={linkVariants()}
+            target="_blank"
+            href="https://brief.law"
+          >
+            Brief
+          </a>{" "}
+          and{" "}
           <a
             className={linkVariants()}
             target="_blank"
@@ -108,7 +116,7 @@ export default function Home() {
       </Collapsible.Root>
       <div>
         I love to write useful software, explore new ideas, spend time with my
-        family & friends & dogs, travel, ski, run, and read. A few books that
+        family & friends & dogs, travel, ski, run, and read. A couple books that
         have influenced my thinking:
       </div>
       <ol className="list-inside list-decimal text-sm text-left">
