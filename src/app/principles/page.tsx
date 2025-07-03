@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex flex-col gap-3">
           <span className="font-semibold text-white">Principles</span>
         </div>
-        <div>I have a few guiding values which I try to live by:</div>
+        <div>These are some of the values I try to live by:</div>
         <Accordion.Root defaultValue={principles[0].title} type="single">
           <ol className="list-inside list-decimal space-y-3 text-sm text-left w-full">
             {principles.map((principle) => (
@@ -38,6 +38,7 @@ export default function Home() {
             ))}
           </ol>
         </Accordion.Root>
+        <div>These will change over time as I learn more.</div>
       </main>
     </>
   );
@@ -72,22 +73,21 @@ const principles = [
   {
     title: "Meaningful contributions",
     description:
-      "The goal is not money - it is first meaningful contributions to the world, which often lead to money. Life is short, and every day provides an opportunity to contribute.",
+      "The goal is not money - it is first meaningful contributions to the world, which often lead to money. Life is short, and every day contains opportunity.",
   },
   {
     title: "Exponential is incremental",
-    description:
-      "See the small wins as building a foundation that accelerate as they grow.",
+    description: "See the small wins as building an accelerating foundation.",
   },
   {
     title: "Reduce suffering",
     description:
-      "The best long-term outcome in any situation is the one that reduces suffering. This applies to people and to animals.",
+      "The best long-term outcome in any situation is the one that reduces suffering.",
   },
   {
     title: "Learn every day",
     description:
-      "Every day should come with learning something that you are passionate about.",
+      "Every day should include learning something that you are passionate about.",
   },
   {
     title: "Feel feelings",
