@@ -115,7 +115,7 @@ export default function Home() {
 
       <div className="relative w-full h-16">
         <svg
-          className="absolute h-[70px] opacity-70 -translate-x-1/4 -rotate-[16deg] -translate-y-[123%] top-1/2 left-1/2 blur-xl pointer-events-none select-none -z-10"
+          className="hidden sm:flex absolute h-[70px] opacity-70 -translate-x-1/4 -rotate-[16deg] -translate-y-[123%] top-1/2 left-1/2 blur-xl pointer-events-none select-none -z-10"
           viewBox="0 0 762 192"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
