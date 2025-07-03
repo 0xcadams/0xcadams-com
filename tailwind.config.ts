@@ -14,23 +14,29 @@ const config: Config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0px", opacity: "0" },
+          from: { height: "0px", opacity: "0", filter: "blur(5px)" },
           to: {
             height: "var(--radix-collapsible-content-height)",
             opacity: "1",
+            filter: "blur(0px)",
           },
         },
         "accordion-up": {
           from: {
             height: "var(--radix-collapsible-content-height)",
             opacity: "1",
+            filter: "blur(0px)",
           },
-          to: { height: "0px", opacity: "0" },
+          to: {
+            height: "0px",
+            opacity: "0",
+            filter: "blur(5px)",
+          },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.13s linear",
-        "accordion-up": "accordion-up 0.13s linear",
+        "accordion-down": "accordion-down 0.13s ease-in",
+        "accordion-up": "accordion-up 0.13s ease-in",
       },
     },
   },

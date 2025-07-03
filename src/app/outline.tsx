@@ -6,7 +6,7 @@ const outlineVariants = cva(
     variants: {
       variant: {
         default:
-          'before:from-white/40 before:via-white/20 before:to-white/10 hover:before:from-white/50 hover:before:via-white/50 hover:before:to-white/50',
+          'before:from-white/40 before:via-white/30 before:to-white/20 hover:before:from-white/50 hover:before:via-white/50 hover:before:to-white/50',
         primary:
           'before:from-primary/100 before:via-primary/70 before:to-primary/50',
         secondary:
