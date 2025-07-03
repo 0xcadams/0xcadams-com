@@ -41,7 +41,7 @@ export default function RootLayout({
       <body
         className={cn(
           `${geistSans.variable} ${geistMono.variable} antialiased`,
-          `transition-with-reduce bg-[length:610px] bg-repeat bg-[url("https://cdn.filetransparency.com/images/noise.png")]`
+          `transition-with-reduce bg-[length:610px] bg-repeat bg-[url("/images/noise.png")]`
         )}
       >
         <div
