@@ -84,7 +84,10 @@ export default function RootLayout({
             </a>
           </footer>
 
-          <Analytics />
+          <Analytics
+            scriptSrc="https://cadams.io/api/data/script.js"
+            endpoint="https://cadams.io/api/data"
+          />
 
           <svg
             className="absolute right-4 -top-4 overflow-visible blur-lg pointer-events-none select-none -z-10"
