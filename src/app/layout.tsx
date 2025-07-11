@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
 import { cn } from "./cn";
 import { Button } from "./button";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -83,6 +83,8 @@ export default function RootLayout({
               </Button>
             </a>
           </footer>
+
+          <Analytics />
 
           <svg
             className="absolute right-4 -top-4 overflow-visible blur-lg pointer-events-none select-none -z-10"
