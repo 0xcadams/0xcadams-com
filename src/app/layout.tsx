@@ -1,19 +1,14 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import { cn } from "./cn";
-import { Button } from "./button";
 import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
+import { IBM_Plex_Sans } from "next/font/google";
+import { Button } from "./button";
+import { cn } from "./cn";
+import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const sans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -40,13 +35,13 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          `${geistSans.variable} ${geistMono.variable} antialiased`,
+          `${sans.variable} antialiased`,
           `transition-with-reduce bg-[length:610px] bg-repeat bg-[url("/images/noise.png")]`
         )}
       >
         <div
           className={cn(
-            "grid grid-rows-[20px_1fr_20px] max-w-2xl mx-auto items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]",
+            "grid grid-rows-[20px_1fr_20px] max-w-2xl mx-auto items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-sans)]",
             "text-white/90"
           )}
         >
